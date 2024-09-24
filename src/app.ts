@@ -217,7 +217,7 @@ class ProjectList
   extends Component<HTMLDivElement, HTMLElement>
   implements DragTarget
 {
-  assignedProjects: any[];
+  assignedProjects: Project[];
 
   constructor(private type: "active" | "finished") {
     super("project-list", "app", false, `${type}-projects`);
